@@ -1,0 +1,127 @@
+.ViewComponent {
+    flex: 9;
+    padding: 20px;
+    background-color: #f6f6f6;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.View-img {
+
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.ViewTitles {
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.ViewTitle {
+
+    font-size: 28px;
+    font-weight: 700;
+    font-family: monospace;
+    color: rgb(97, 84, 108);
+    text-align: center;
+}
+
+.ViewTitleInput {
+
+    font-size: 28px;
+    font-weight: 700;
+    font-family: monospace;
+    color: rgb(97, 84, 108);
+    background-color: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgb(203, 200, 200);
+    outline: none;
+}
+
+.ViewIcon {
+    float: right;
+    font-size: 20px;
+
+}
+
+.ViewIcon .Icon1 {
+    color: rgb(14, 159, 226);
+    margin-right: 10px;
+
+}
+
+.ViewIcon .Icon2 {
+    color: red;
+}
+
+.ViewAuthor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(131, 116, 72);
+
+}
+
+.ViewDescription {
+
+    padding: 30px;
+    
+    
+}
+
+.ParaDescription {
+
+    line-height: 26px;
+    font-family: Lucida Sans;
+    font-size: 14px;
+}
+
+.ParaDescription::first-letter {
+
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 50px;
+}
+
+.ParaDescriptionInput {
+    line-height: 26px;
+    font-family: Lucida Sans;
+    font-size: 14px;
+    background-color: #f6f6f6;
+    /* text-align: center; */
+    width: 100%;
+    border: none;
+    outline: none;
+    width: 70vw;
+    margin-left: 10px;
+    height: 100vh;
+
+}
+
+.updateButton{
+
+display: flex;
+flex-direction: row;
+justify-content: end;
+}
+
+.updateButtonInput {
+
+    width: 15%;
+    height: 6vh;
+    border-radius: 10px;
+    border-color: white;
+    color: rgb(244, 249, 244);
+    background-color: teal;
+    cursor: pointer;
+   
+    
+
+}

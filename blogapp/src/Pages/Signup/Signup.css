@@ -1,0 +1,84 @@
+.signupDetails {
+    background: linear-gradient(rgba(156, 152, 152, 0.5),
+            rgba(216, 213, 213, 0.5)),
+        url('https://i.postimg.cc/yYbT6bWQ/pexels-polina-kovaleva-5717411.jpg');
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.signupFormGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.signupTitle{
+    font-size: 30px;
+    padding-top: 10px;
+    color: black;
+    padding-bottom: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.SignuplabelInput {
+    font-size: 24px;
+    padding-top: 10px;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.signupInput {
+
+    width: 14rem;
+    height: 2rem;
+    padding: 5px;
+    margin-top: 5px;
+    border-color: black;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.signupInput::placeholder {
+    color: black;
+}
+
+.SignupbuttonInput {
+
+    margin-top: 30px;
+    width: 14rem;
+    height: 2.5rem;
+    align-self: center;
+    border-radius: 20px;
+    border-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+
+}
+
+.signuplink {
+
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}

@@ -1,0 +1,144 @@
+.navbar {
+    width: 100%;
+
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(231, 232, 229);
+    align-items: center;
+    z-index: 999;
+}
+
+.navbar .navbar-items {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:rgb(165, 147, 147) ;
+
+}
+
+.navbar .navbar-left {
+
+    display: flex;
+    flex-direction: row;
+   
+    font-size: 1.5rem;
+    align-items: center;
+    color:rgb(165, 147, 147) ;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.navbar .navbar-center {
+
+    display: flex;
+    flex-direction: row;
+  
+    gap: 30px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    list-style-type: none;
+    cursor: pointer;
+    font-family:fontawesome;
+    color:rgb(165, 147, 147) ;
+}
+
+
+.navbar-right{
+    display: flex;
+    
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-right > i{
+    font-size: 23px;
+    color: rgb(14, 5, 5);
+    cursor: pointer;
+    color:rgb(165, 147, 147) ;
+}
+.navbar .navbar-img{
+
+    width: 50px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .navbar {
+        width: 100%;
+   
+        height: 70px;
+        position: sticky;
+        top: 0;
+        background-color: rgb(231, 232, 229);
+        align-items: center;
+        z-index: 999;
+    }
+    
+    .navbar .navbar-items {
+        padding: 15px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color:rgb(165, 147, 147) ;
+       display: none;
+    
+    }
+    
+    .navbar .navbar-left {
+    
+        display: flex;
+        flex-direction: row;
+        flex: 3;
+        font-size: 1.5rem;
+        align-items: center;
+        color:rgb(165, 147, 147) ;
+        cursor: pointer;
+        gap: 10px;
+    }
+    
+    .navbar .navbar-center {
+    
+        display: flex;
+        flex-direction: row;
+        flex: 6;
+        gap: 30px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500;
+        list-style-type: none;
+        cursor: pointer;
+        font-family:fontawesome;
+        color:rgb(165, 147, 147) ;
+    }
+    
+    
+    .navbar-right{
+        display: flex;
+        flex: 3;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .navbar-right > i{
+        font-size: 23px;
+        color: rgb(14, 5, 5);
+        cursor: pointer;
+        color:rgb(165, 147, 147) ;
+    }
+    .navbar .navbar-img{
+    
+        width: 50px;
+        height: 40px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+    
+    
+}

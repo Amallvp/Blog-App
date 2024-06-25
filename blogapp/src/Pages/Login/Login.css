@@ -1,0 +1,97 @@
+.LoginDetails {
+    background: linear-gradient(rgba(242, 236, 236, 0.5),
+            rgba(39, 38, 38, 0.5)),
+        url('https://i.postimg.cc/zGBLPzj3/pexels-polina-kovaleva-5717479.jpg');
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.LoginFormGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.loginTitle{
+    font-size: 30px;
+    padding-top: 10px;
+    color: white;
+    padding-bottom: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.labelInput {
+    font-size: 20px;
+    padding-top: 10px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+.LoginInput {
+
+    width: 14rem;
+    height: 2rem;
+    padding: 5px;
+    margin-top: 5px;
+    border-color: white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+
+}
+
+.LoginInput::placeholder {
+    color: white;
+}
+
+.buttonInput {
+
+    margin-top: 30px;
+    width: 14rem;
+    height: 2.5rem;
+    align-self: center;
+    border-radius: 20px;
+    border-color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 22px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonInput:disabled{
+    cursor: not-allowed;
+    background-color: white;
+    color:black
+}
+
+.signupbutton {
+
+    margin-top: 30px;
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 13px;
+    align-self: center;
+    border-radius: 20px;
+    border-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    cursor: pointer;
+}
+
