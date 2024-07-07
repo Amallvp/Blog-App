@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color:rgb(165, 147, 147) ;
+    color: rgb(165, 147, 147);
 
 }
 
@@ -22,10 +22,10 @@
 
     display: flex;
     flex-direction: row;
-   
+
     font-size: 1.5rem;
     align-items: center;
-    color:rgb(165, 147, 147) ;
+    color: rgb(165, 147, 147);
     cursor: pointer;
     gap: 10px;
 }
@@ -34,32 +34,33 @@
 
     display: flex;
     flex-direction: row;
-  
+
     gap: 30px;
     align-items: center;
     font-size: 18px;
     font-weight: 500;
     list-style-type: none;
     cursor: pointer;
-    font-family:fontawesome;
-    color:rgb(165, 147, 147) ;
+    font-family: fontawesome;
+    color: rgb(165, 147, 147);
 }
 
 
-.navbar-right{
+.navbar-right {
     display: flex;
-    
+
     align-items: center;
     gap: 15px;
 }
 
-.navbar-right > i{
+.navbar-right>i {
     font-size: 23px;
     color: rgb(14, 5, 5);
     cursor: pointer;
-    color:rgb(165, 147, 147) ;
+    color: rgb(165, 147, 147);
 }
-.navbar .navbar-img{
+
+.navbar .navbar-img {
 
     width: 50px;
     height: 40px;
@@ -67,78 +68,116 @@
     cursor: pointer;
 }
 
+.navbaricon1 {
+    display: none;
+}
 
-@media screen and (max-width: 600px) {
-    
+
+@media  (max-width: 600px) {
+
     .navbar {
-        width: 100%;
-   
-        height: 70px;
         position: sticky;
-        top: 0;
-        background-color: rgb(231, 232, 229);
-        align-items: center;
-        z-index: 999;
     }
-    
+
+    .navbar-items-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .navbar .navbar-items {
-        padding: 15px 30px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        color:rgb(165, 147, 147) ;
-       display: none;
-    
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        color: rgb(165, 147, 147);
+        position: absolute;
+        width: 80vw;
+        height: 73vh;
+        top: .1rem;
+        
+        background-color: rgb(29, 29, 29);
+        opacity: .95;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        border-radius: 15px;
+        
     }
-    
+
+    .navbar-items.active {
+        top: -750px;
+    }
+
     .navbar .navbar-left {
-    
+
         display: flex;
         flex-direction: row;
-        flex: 3;
-        font-size: 1.5rem;
-        align-items: center;
-        color:rgb(165, 147, 147) ;
+        justify-content: space-evenly;
+        align-items: end;
+        flex: 2;
+        font-size: 1.2rem;
+        color: white;
         cursor: pointer;
-        gap: 10px;
+        padding-bottom:10px;
     }
-    
+
     .navbar .navbar-center {
-    
+
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: end;
         flex: 6;
-        gap: 30px;
         align-items: center;
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 900;
         list-style-type: none;
         cursor: pointer;
-        font-family:fontawesome;
-        color:rgb(165, 147, 147) ;
+        font-family: fontawesome;
+        color: rgb(251, 251, 251);
+         backdrop-filter: blur(2px);
     }
-    
-    
-    .navbar-right{
+
+
+    .navbar-right {
         display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 15px;
         flex: 3;
         align-items: center;
-        gap: 15px;
+        gap: 35vw;
+       
+
     }
-    
-    .navbar-right > i{
-        font-size: 23px;
-        color: rgb(14, 5, 5);
-        cursor: pointer;
-        color:rgb(165, 147, 147) ;
+
+    .navbar-right>i {
+        display: none;
     }
-    .navbar .navbar-img{
-    
-        width: 50px;
-        height: 40px;
+
+    .navbar .navbar-img {
+
+        width: 90px;
+        height: 80px;
         border-radius: 30px;
         cursor: pointer;
     }
-    
-    
+
+    .navbaricon1 {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        cursor: pointer;
+        color: rgb(9, 0, 0);
+        font-size: 30px;
+        float: right;
+        padding-top: 21px;
+        padding-right: 35px
+
+    }
+.navbaricon1.times{
+    color: white;
+}
+
 }

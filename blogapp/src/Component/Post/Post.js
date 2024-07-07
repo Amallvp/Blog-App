@@ -13,8 +13,8 @@ function Post({ post }) {
 
         <div className="postDetail">
           <div className='postDetails'>
-            <span className='postDetails-cat'>Music</span>
-            <span className='postDetails-cat'>Life</span>
+            {/* <span className='postDetails-cat'>Music</span>
+            <span className='postDetails-cat'>Life</span> */}
           </div>
           <div>
             <span className='postDetails-cat'>{new Date(post.createdAt).toDateString()}</span>
