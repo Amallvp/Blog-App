@@ -2,3 +2,12 @@
 
     display: flex;
 }
+
+@media screen and (max-width: 600px) {
+
+    .SingleView{
+
+        display: flex;
+        flex-direction: column;
+    }
+}

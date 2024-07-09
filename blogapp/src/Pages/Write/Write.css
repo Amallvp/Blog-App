@@ -88,3 +88,35 @@
     background-color: teal;
     cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+    .write {
+        margin: 10px;
+        padding-top:20px; 
+    }
+    
+    .inputImg {
+        width: 100%;
+    }
+    
+    .writeInputTextarea {
+        font-size: 20px;
+        margin-top: 40px;
+        border: none;
+        width: 70vw;
+        margin-left: 10px;
+        font-family: Lucida Sans;
+        height: 30vh auto;
+    }
+    .writeInputTextarea:focus {
+        outline: none;
+    }
+    
+    .writeSubmit{
+        top: 8%;
+        left: 75%;
+        width: 21vw;
+        height: 5vh;
+       
+    }
+
+}

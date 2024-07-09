@@ -30,10 +30,6 @@
     
 }
 
-.postDetails {
-   
-}
-
 .postDetails-cat {
     padding: 10px;
     font-size: 15px;
@@ -46,6 +42,7 @@
     padding: 5px;
     margin-top: 20px;
     text-align: center;
+    word-break: break-all;
 }
 
 .postTitle {

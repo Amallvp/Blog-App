@@ -23,40 +23,45 @@
     color: rgb(214, 113, 144);
 }
 
-.pTitle2{
+.pTitle2 {
 
     font-size: 15px;
     font-weight: 600;
-    color: rgb(214, 113, 144); 
+    color: rgb(214, 113, 144);
     padding-top: 15px;
 }
-.profileMain{
 
-    margin-top:30px;
+.profileMain {
+
+    margin-top: 30px;
 
 }
-.profileMainTitle{
-   font-size: 20px;
+
+.profileMainTitle {
+    font-size: 20px;
 }
-.profileImage{
+
+.profileImage {
 
     display: flex;
     margin-top: 10px;
     align-items: center;
     gap: 20px;
 }
-.profileImg{
+
+.profileImg {
 
     width: 8vw;
     height: 15vh;
     border-radius: 30px;
     object-fit: cover;
 }
-.profileIcon{
+
+.profileIcon {
 
     font-size: 25px;
     border: 1px solid;
-   border-radius: 50%;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
     display: flex;
@@ -67,30 +72,32 @@
     color: white;
     cursor: pointer;
 }
-.profileUserDetails{
+
+.profileUserDetails {
 
     display: flex;
     flex-direction: column;
     line-height: 30px;
     margin-top: 10px;
-   
+
 }
-.labelTitle{
+
+.labelTitle {
 
     font-size: 24px;
 }
-.profileUserInput{
+
+.profileUserInput {
 
     height: 5vh;
     outline: none;
     padding: 10px;
     margin-bottom: 20px;
-  border: none;
-  border-bottom: 2px solid rgb(237, 234, 234)
-   
-
+    border: none;
+    border-bottom: 2px solid rgb(237, 234, 234)
 }
-.profileSubmit{
+
+.profileSubmit {
 
     width: 10rem;
     height: 2.5rem;
@@ -100,4 +107,23 @@
     color: white;
     border: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+
+    .pTitle1 {
+        font-size: 30px;
+        text-align: start;
+    }
+    .pTitle2 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .profileImg {
+
+        width: 100%;
+        height: 25vh;
+    }
+   
 }

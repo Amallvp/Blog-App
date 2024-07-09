@@ -6,7 +6,7 @@ import { Context } from '../../Context/Context'
 
 function Navbar() {
 
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
     const handleClick = () => setIsOpen(!isOpen)
 
@@ -19,6 +19,11 @@ function Navbar() {
     const handleLogout = () => {
 
         dispatch({ type: "LOGOUT" })
+    }
+
+    const handleCombinedClick = () => {
+        handleLogout()
+        handleClick()
     }
 
     return (
@@ -34,26 +39,26 @@ function Navbar() {
                         <i class="fa-brands fa-x-twitter"></i>
                         <i class="fa-brands fa-pinterest"></i>
                     </div>
-    
+
                     <ul className="navbar-center">
-                        <li><Link className='link' to={'/'} onClick={()=>setIsOpen(!isOpen)}>Home</Link></li>
-                        {user ? <Link className='link' to={'/about'}><li onClick={()=>setIsOpen(!isOpen)}>About</li></Link> : ""}
-                        <Link className='link' to={'/'}><li onClick={()=>setIsOpen(!isOpen)}>Contact</li></Link>
-                        <Link className='link' to={'/write'}><li onClick={()=>setIsOpen(!isOpen)}>Write</li></Link>
-                        <Link className='link' to={'/login'}><li onClick={handleLogout}>{user ? "Logout" : "Login"}</li></Link>
+                        <li><Link className='link' to={'/'} onClick={() => setIsOpen(!isOpen)}>Home</Link></li>
+                        {user ? <Link className='link' to={'/about'}><li onClick={() => setIsOpen(!isOpen)}>About</li></Link> : ""}
+                        <Link className='link' to={'/'}><li onClick={() => setIsOpen(!isOpen)}>Contact</li></Link>
+                        <Link className='link' to={'/write'}><li onClick={() => setIsOpen(!isOpen)}>Write</li></Link>
+                        <Link className='link' to={'/login'}><li onClick={handleCombinedClick}>{user ? "Logout" : "Login"}</li></Link>
                     </ul>
-    
+
                     <div className="navbar-right">
                         <Link to={'/profileSettings'} style={{ textDecoration: 'none', color: 'inherit' }}>
-                            {user ? <img className='navbar-img'
+                            {user ? <img className='navbar-img' onClick={() => setIsOpen(!isOpen)}
                                 src={PF + user.profilepic}
                                 alt="" /> : ""}
-    
+                            
                         </Link>
-    
+
                         <i class="navbar-icon fa-solid fa-magnifying-glass"></i>
                     </div>
-    
+
                 </div>
             </div>
             <div>

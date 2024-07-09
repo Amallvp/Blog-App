@@ -17,6 +17,7 @@
 
     padding: 20px;
     text-align: center;
+    word-break: break-all;
 
 }
 
@@ -41,6 +42,7 @@
     border: none;
     border-bottom: 2px solid rgb(203, 200, 200);
     outline: none;
+    word-break: break-all;
 }
 
 .ViewIcon {
@@ -72,8 +74,8 @@
 .ViewDescription {
 
     padding: 30px;
-    
-    
+
+
 }
 
 .ParaDescription {
@@ -102,14 +104,15 @@
     width: 70vw;
     margin-left: 10px;
     height: 100vh;
+    word-break: break-all;
 
 }
 
-.updateButton{
+.updateButton {
 
-display: flex;
-flex-direction: row;
-justify-content: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .updateButtonInput {
@@ -121,7 +124,76 @@ justify-content: end;
     color: rgb(244, 249, 244);
     background-color: teal;
     cursor: pointer;
-   
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .ViewComponent {
+        flex: 9;
+        padding-top: 20px;
+        background-color: #f6f6f6;
+        margin: 0px;
+        border-radius: 10px;
+    }
+
+    .View-img {
+        height: 50vh;
+        border-radius: 10px;
+    }
+
+    .ViewTitles {
+        width: 80%;
+        padding-top: 40px;
+        text-align: center;
+        word-break: break-all;
+
+    }
+
+    .ViewTitle {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .ViewIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        right: 10px;
+        top: 64%;
+        font-size: 20px;
+        position: absolute;
+
+    }
+    .ViewIcon .Icon1 {
+        color: rgb(14, 159, 226);
+        margin-right: 0px;
     
+    }
+
+
+
+    .ViewDescription {
+
+        padding-top: 30px;
+        text-align: justify;
+        word-break: break-all;
+
+    }
+
+    .updateButtonInput {
+
+        width: 100%;
+        height: 6vh;
+        font-size: 22px;
+        font-weight: 500;
+
+    }
+
+
 
 }
