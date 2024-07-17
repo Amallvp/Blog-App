@@ -1,7 +1,7 @@
 .signupDetails {
     background: linear-gradient(rgba(156, 152, 152, 0.5),
             rgba(216, 213, 213, 0.5)),
-        url('https://i.postimg.cc/yYbT6bWQ/pexels-polina-kovaleva-5717411.jpg');
+        url('../../assets//img3.jpg');
     width: 100%;
     height: calc(100vh - 70px);
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
     margin-top: 5px;
     border-color: black;
     border-radius: 5px;
-    background-color: transparent;
+    background-color: rgba(246, 242, 242, 0.5);
     color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 

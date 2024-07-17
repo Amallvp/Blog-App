@@ -5,6 +5,7 @@ import { Context } from '../../Context/Context'
 import axios from 'axios'
 import BASE_URL from '../../config'
 
+
 function Login() {
 
     const navigate =useNavigate()
@@ -23,7 +24,7 @@ function Login() {
 
             const res = await axios.post(`${BASE_URL}/login`, {
                 email:emailRef.current.value,
-                password:passwordRef.current.value
+                password:passwordRef.current.value,
 
             })
             dispatch({ type: "LOGIN_SUCCESS", payload: res.data })

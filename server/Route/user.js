@@ -41,7 +41,7 @@ router.delete('/:id', async (req, res) => {
 
 
     const user = await users.findById(req.params.id)
-    if (user._id.toString() === req.params.id) {
+    if (user.id.toString() === req.params.id) {
 
         try {
 

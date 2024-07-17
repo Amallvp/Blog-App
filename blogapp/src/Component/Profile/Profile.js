@@ -7,27 +7,29 @@ import BASE_URL from '../../config'
 
 function Profile() {
 
-     const PF = "http://localhost:5000/images/"
+    const PF = "http://localhost:5000/images/"
 
     const [username, setUsername] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [file, setFile] = useState(null)
-    const [userUpdated,setUserUpdated]=useState(false)
-
-    const {user ,dispatch}=useContext(Context)
+    const [userUpdated, setUserUpdated] = useState(false)
+    
+    const { user, dispatch } = useContext(Context)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        dispatch({type:"UPDATE_START"})
+        dispatch({ type: "UPDATE_START" })
 
         const updatedUser = {
-            userId:user._id,
+            userId: user._id,
             username,
             email,
-            password
-            
+            password,
+        
+
         }
+       
 
         if (file) {
 
@@ -46,18 +48,33 @@ function Profile() {
             catch { }
         }
         try {
-         const res=  await axios.put(`${BASE_URL}/user/${user._id}`,updatedUser)
+            const res = await axios.put(`${BASE_URL}/user/${user._id}`, updatedUser)
 
-         console.log(res);
-         dispatch({type:"UPDATE_SUCCESS",payload:res.data})
-        
-window.location.reload(`${BASE_URL}/user/${user._id}`)
-        } 
-      
-        
-        catch {    dispatch({type:"UPDATE_ERROR"}) }
+            console.log(res);
+            dispatch({ type: "UPDATE_SUCCESS", payload: res.data })
+
+            window.location.reload(`${BASE_URL}/user/${user._id}`)
+        }
+
+
+        catch { dispatch({ type: "UPDATE_ERROR" }) }
 
     }
+
+
+    // const handleDelete = async (e) => {
+    //     e.preventDefault()
+    //     try {
+
+    //      await axios.delete(`${BASE_URL}/user/${user._id}`)
+         
+    //     }
+    //     catch (err) {
+    //         console.log(err);
+    //     }
+
+    // }
+    // onClick={handleDelete}
 
     return (
         <div className="profile">
@@ -75,12 +92,12 @@ window.location.reload(`${BASE_URL}/user/${user._id}`)
                         <span className='profileMainTitle'>Profile Picture</span>
 
                         <div className="profileImage">
-                            <img className='profileImg' src={file ? URL.createObjectURL(file) : PF+user.profilepic} alt=""  />
+                            <img className='profileImg' src={file ? URL.createObjectURL(file) : PF + user.profilepic} alt="" />
                             <div className='profileIcon'>
                                 <label htmlFor="profileDetailsIcon">
                                     <i className="profileIcon fa-regular fa-circle-user"></i>
                                 </label>
-                                <input type="file" id='profileDetailsIcon' style={{ display: 'none' }}  onChange={(e) => setFile(e.target.files[0])}/>
+                                <input type="file" id='profileDetailsIcon' style={{ display: 'none' }} onChange={(e) => setFile(e.target.files[0])} />
                             </div>
                         </div>
 
@@ -88,24 +105,24 @@ window.location.reload(`${BASE_URL}/user/${user._id}`)
 
                             <label className='labelTitle'>Username</label>
                             <input className='profileUserInput' type="text" value={username} placeholder={user.username}
-                            
-                            onChange={e => setUsername(e.target.value)}
 
-                            id='profileUserInput1' />
+                                onChange={e => setUsername(e.target.value)}
+
+                                id='profileUserInput1' />
 
                             <label className='labelTitle'>Email</label>
-                            <input className='profileUserInput' type="email" placeholder={user.email} 
-                            
-                            onChange={e => setEmail(e.target.value)}
-                            
-                            id='profileUserInput2' />
+                            <input className='profileUserInput' type="email" placeholder={user.email}
 
-                            <label  className='labelTitle'>Password</label>
-                            <input className='profileUserInput' type="password" 
-                            
-                            onChange={e => setPassword(e.target.value)}
-                            
-                            id='profileUserInput3' />
+                                onChange={e => setEmail(e.target.value)}
+
+                                id='profileUserInput2' />
+
+                            <label className='labelTitle'>Password</label>
+                            <input className='profileUserInput' type="password"
+
+                                onChange={e => setPassword(e.target.value)}
+
+                                id='profileUserInput3' />
 
                             <button className='profileSubmit' type='submit'>Submit</button>
                         </div>

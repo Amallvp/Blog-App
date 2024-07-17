@@ -1,7 +1,7 @@
 .LoginDetails {
     background: linear-gradient(rgba(242, 236, 236, 0.5),
             rgba(39, 38, 38, 0.5)),
-        url('https://i.postimg.cc/zGBLPzj3/pexels-polina-kovaleva-5717479.jpg');
+        url('../../assets/img2.jpg');
     width: 100%;
     height: calc(100vh - 70px);
     background-repeat: no-repeat;
@@ -40,14 +40,14 @@
 
 .LoginInput {
 
-    width: 14rem;
-    height: 2rem;
+    width: 16rem;
+    height: 3rem;
     padding: 5px;
     margin-top: 5px;
     border-color: white;
     border-radius: 5px;
-    background-color: transparent;
-    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 253, 253);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 
 }

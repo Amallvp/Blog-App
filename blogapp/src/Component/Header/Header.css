@@ -15,14 +15,14 @@ width: 100%;
 
 .headerTitle1{
     position: absolute;
-    top: 18%;
+    top: 16%;
     font-size: 20px;
     color: rgb(147, 164, 172);
     
 }
 .headerTitle2{
     position: absolute;
-    top: 20%;
+    top: 18%;
     font-size: 100px;
     color: rgb(148, 115, 129);
 }
