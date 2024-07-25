@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const users = require("../Models/users");
-const jwt = require("jsonwebtoken")
 
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
@@ -36,7 +35,6 @@ router.post("/login", async (req, res) => {
       return res.status(402).json("wrong credentials");
     }
 
-    var token = jwt.sign({ auth: 'authentication' }, 'secretkey123');
     const { password, ...others } = user._doc;
     res.status(200).json(others);
   } catch (err) {
