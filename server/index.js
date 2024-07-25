@@ -25,11 +25,7 @@ app.use(
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect(
-    process.env.mongoDB_URL,
-    { dbName: "Blogs" },
-    { useFindAndModify: true }
-  )
+  .connect("//localhost:27017", { dbName: "Blogs" }, { useFindAndModify: true })
   .then(() => {
     console.log("DB Connected");
   })
