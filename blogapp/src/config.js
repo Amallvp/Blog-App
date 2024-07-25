@@ -1,3 +1,3 @@
-const BASE_URL="https://blog-app-yzcp.onrender.com"
+const BASE_URL="http://localhost:5000/api"
 
 export default BASE_URL
