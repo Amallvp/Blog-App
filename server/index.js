@@ -17,7 +17,7 @@ app.use(router);
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://deploy-mern-1whq.vercel.app"],
+    origin: "*",
     methods: ["POST", "PUT", "GET", "DELETE"],
     credentials: true,
   })
@@ -25,7 +25,11 @@ app.use(
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect("//localhost:27017", { dbName: "Blogs" }, { useFindAndModify: true })
+  .connect(
+    process.env.mongoDB_URL,
+    { dbName: "Blogs" },
+    { useFindAndModify: true, useNewUrlParser: true, useUnifiedTopology: true }
+  )
   .then(() => {
     console.log("DB Connected");
   })
